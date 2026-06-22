@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "sg" {
-  Name = "devops-lab-ec2-test"
+  name = "devops-lab-ec2-test"
 
   ingress {
     from_port   = 22
