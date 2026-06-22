@@ -1,0 +1,13 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# AWS CLI
+awscliv2.zip
+
+# OS
+.DS_Store
+
+# logs
+*.log
