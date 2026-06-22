@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "sg" {
-  name = "devops-lab-ec2-test"
+  name = "devops-sg"
 
   ingress {
     from_port   = 22
@@ -34,6 +34,6 @@ resource "aws_instance" "app" {
   vpc_security_group_ids = [aws_security_group.sg.id]
 
   tags = {
-    Name = "devops-lab-ec2"
-  }
+  Name = "devops-lab-ec2-test"
+ }
 }
