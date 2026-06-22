@@ -34,6 +34,6 @@ resource "aws_instance" "app" {
   vpc_security_group_ids = [aws_security_group.sg.id]
 
   tags = {
-    Name = "devops-lab-ec2"
-  }
+  Name = "devops-lab-ec2-test"
+ }
 }
